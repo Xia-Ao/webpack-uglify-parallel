@@ -144,4 +144,5 @@ UglifyJsParallelPlugin.prototype.disconnect = function() {
 		worker.kill();
 	});
 	this.workers = [];
+	this._next_worker = -1;
 };
